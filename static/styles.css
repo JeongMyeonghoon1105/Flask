@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  background-color: #e6e6e6 !important;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #084b8a;
+}
+
+a {
+  text-decoration: none;
+}
+
+#title {
+  width: 1200px;
+  height: 50px;
+  background-color: #084b8a;
+
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  line-height: 50px;
+}
+
+#container {
+  width: 1200px;
+  height: 800px;
+
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  background-color: #e6e6e6;
+}
+
+#result-title-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  width: 70%;
+  height: 60%;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.fa-solid {
+  font-size: 3em;
+}
+
+#content {
+  width: 1200px;
+  height: 800px;
+  background-color: #e6e6e6;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+#result {
+  position: relative;
+  width: 70%;
+  height: 800px;
+}
+
+.result-title {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}
+
+#buy-place {
+  width: 80%;
+  height: 80%;
+  border-radius: 50px;
+  background-color: #FAFAFA;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search {
+  width: 30%;
+  height: 800px;
+}
+
+#search-text {
+  width: 100%;
+  height: 100px;
+  background-color: #BDBDBDB4;
+  border-radius: 10px;
+  margin-top: 100px;
+  font-size: 1.4em;
+  font-weight: bold;
+  border: 1px solid gray;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-container {
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  background-color: #084b8a;
+  /* position: relative;
+  transform: translateY(-100%);
+  bottom: 0; */
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+
+#copyright {
+  width: 1200px;
+  height: 50px;
+  background-color: #084b8a;
+
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  color: white;
+  line-height: 50px;
+}
+
+.panel-heading {
+  height: 400px;
+}
+
+.note-editing-area, .note-status-output, .note-statusbar {
+  display: none !important;
+}
+
+.note-style, .note-font, .note-fontname, .note-color, .note-para, .note-table, .note-view {
+  display: none !important;
+}
+
+.btn-sm:first-child {
+  display: none;
+}
+
+.btn-group>.btn:last-child:not(:first-child) {
+  display: none;
+}
+
+.note-btn-group {
+  margin: 0 !important; 
+}
+
+.btn-sm {
+  margin: 0;
+  width: 360px;
+  height: 400px;
+}
+
+.note-toolbar {
+  padding: 0 !important;
+}
+
+.note-icon-picture {
+  font-size: 7em;
+}
