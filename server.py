@@ -22,7 +22,6 @@ def result():
     search_result = []
     for filename in os.listdir('static/result'):
         search_result.append('static/result/'+filename)
-    style = "url_for('static', filename='styles.css')"
     source = """
     <!DOCTYPE html>
     <html lang="en">
@@ -32,7 +31,7 @@ def result():
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY WEBSITE</title>
-    <link href="{}" rel="stylesheet" />
+    <link href="static/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- include libraries(jQuery, bootstrap) -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
@@ -91,9 +90,9 @@ def result():
                 </div>
                 </div>
             </div>
-            <div style="width: 60%; height: 100%; background-color: #d8d8d8">
+            <div style="width: 60%; height: 100%; background-color: #d8d8d8; overflow: hidden;">
                 <!-- 사진 -->
-                <img src="{}" alt="No Results">
+                <img src="{}" alt="No Results" style="width: 100%;">
             </div>
             <div style="
                     width: 30%;
@@ -161,7 +160,7 @@ def result():
     </body>
 
     </html>
-    """.format(style, search_result[0])
+    """.format(search_result[0])
     return source
 
 
