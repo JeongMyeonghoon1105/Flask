@@ -57,6 +57,63 @@ a {
   border: 1px solid gray;
 }
 
+#result-box {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+
+#arrow-box {
+  position: relative;
+  width: 10%;
+  height: 100%;
+  background-color: #fafafa;
+}
+
+#arrow {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.arrow-container {
+  width: 100%;
+  text-align: center;
+}
+
+#img-box {
+  width: 60%;
+  height: 100%;
+  background-color: #d8d8d8
+}
+
+#description-box {
+  width: 30%;
+  height: 100%;
+  background-color: #848484;
+  position: relative;
+}
+
+#list {
+  list-style-type: none;
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+
+#description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 128px;
+  margin: auto;
+}
+
 .fa-solid {
   font-size: 3em;
 }
@@ -82,6 +139,12 @@ a {
   width: 100%;
   height: 100px;
   text-align: center;
+  position: relative;
+}
+
+#buy-place-box {
+  background-color: #a4a4a4;
+  height: 100%;
   position: relative;
 }
 
@@ -123,9 +186,18 @@ a {
   align-items: center;
 }
 
-.arrow-container {
+#img-input {
   width: 100%;
-  text-align: center;
+  height: 400px;
+  border: 1px solid gray;
+  margin-top: 30px;
+}
+
+#tag {
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+  padding: 10px;
 }
 
 footer {
