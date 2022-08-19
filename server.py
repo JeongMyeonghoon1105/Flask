@@ -16,6 +16,14 @@ def hello():
 
 @app.route('/method')
 def method():
+    filePath = 'static/result'
+    if os.path.exists(filePath):
+        for file in os.scandir(filePath):
+            os.remove(file.path)
+    filePath = 'static/uploaded_imgs'
+    if os.path.exists(filePath):
+        for file in os.scandir(filePath):
+            os.remove(file.path)
     return render_template('/index.html')
 
 
