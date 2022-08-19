@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect
 from werkzeug.utils import secure_filename
-#from cv_thread import CvThread
+# from cv_thread import CvThread
 
 app = Flask(__name__)
 app.static_folder = 'static'
@@ -90,6 +90,6 @@ def down():
 
 
 if __name__ == '__main__':
-    #cv = CvThread()
+    # cv = CvThread()
     # cv.start()
     app.run(port=5000, debug=True)
