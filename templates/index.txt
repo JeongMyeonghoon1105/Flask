@@ -21,7 +21,7 @@
 
 <body>
 <header>
-    <div id="title">MY WEBSITE</div>
+    <div id="title" href="/method">MY WEBSITE</div>
 </header>
 
 <div id="container">
