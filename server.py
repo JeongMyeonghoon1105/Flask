@@ -6,6 +6,8 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 app.static_folder = 'static'
 
+i = 0
+
 
 @app.route('/')
 def hello():
@@ -36,24 +38,40 @@ def search():
 
 @app.route('/result')
 def result():
+    global i
     imgs = os.listdir('static/result')
-    while True:
-        i = 0
 
-        # 만약 i != 0 and 위쪽 화살표 클릭:
-        #   i = i - 1
-        # 만약 i != len(imgs)-1 and 아래쪽 화살표 클릭:
-        #   i = i + 1
+    if len(imgs) == 0:
+        return redirect('/method', code=302)
+    else:
+        search_result = []
+        for filename in imgs:
+            search_result.append('static/result/'+filename)
+        index = open('templates/index.txt', 'r').read()
+        source = index.format(search_result[i])
+        return source
 
-        if len(imgs) == 0:
-            return redirect('/method', code=302)
+
+@app.route('/up')
+def up():
+    if len(os.listdir('static/result')) != 0:
+        global i
+        if i != 0:
+            i = i - 1
         else:
-            search_result = []
-            for filename in imgs:
-                search_result.append('static/result/'+filename)
-            index = open('templates/index.txt', 'r').read()
-            source = index.format(search_result[i])
-            return source
+            i = len(os.listdir('static/result'))-1
+    return redirect('/result', code=302)
+
+
+@app.route('/down')
+def down():
+    if len(os.listdir('static/result')) != 0:
+        global i
+        if i != len(os.listdir('static/result'))-1:
+            i = i + 1
+        else:
+            i = 0
+    return redirect('/result', code=302)
 
 
 if __name__ == '__main__':

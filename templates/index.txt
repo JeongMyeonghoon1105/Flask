@@ -52,17 +52,17 @@
                 bottom: 0;
                 margin: auto 0;
                 ">
-            <div class="arrow-container">
-                <a href="https://sports.news.naver.com/index.nhn" style="color: black">
+            <form class="arrow-container" action="/up">
+              <button type="submit" style="color: black; class="btn btn-success">
                 <i class="fa-solid fa-circle-arrow-up"></i>
-                </a>
-            </div>
+              </button>
+            </form>
             <br />
-            <div class="arrow-container">
-                <a href="https://sports.news.naver.com/wfootball/index" style="color: black">
+            <form class="arrow-container" action="/down">
+              <button type="submit" style="color: black; class="btn btn-success">
                 <i class="fa-solid fa-circle-arrow-down"></i>
-                </a>
-            </div>
+              </button>
+            </form>
             </div>
         </div>
         <div style="width: 60%; height: 100%; background-color: #d8d8d8; overflow: hidden;">
