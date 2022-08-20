@@ -260,3 +260,10 @@ footer {
 .note-icon-picture {
   font-size: 7em;
 }
+
+@media (min-height: 900px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
