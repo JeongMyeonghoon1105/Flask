@@ -60,7 +60,7 @@ def result():
         search_result = []
         for filename in imgs:
             search_result.append('static/result/'+filename)
-        index = open('templates/index.txt', 'r').read()
+        index = open('templates/index.txt', 'r', encoding='utf-8').read()
         source = index.format(search_result[i])
         return source
 

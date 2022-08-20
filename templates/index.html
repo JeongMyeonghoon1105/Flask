@@ -20,6 +20,12 @@
   </header>
 
   <div id="container">
+    <form id="search" action="/upload" method="POST" enctype="multipart/form-data" style="width: 100%; height: 50px; background-color: white;">
+      <input id="upload-name" value="첨부파일" placeholder="첨부파일">
+      <label id="select" for="file">파일선택</label> 
+      <input type="file" id="file">
+      <input type="submit" value="search" />
+    </form>
     <div id="content">
       <div id="result">
         <!-- 제목 -->
@@ -58,7 +64,7 @@
           </div>
         </div>
       </div>
-      <!-- 검색 -->
+      <!-- 검색
       <form id="search" action="/upload" method="POST" enctype="multipart/form-data">
         <input type="submit" id="search-text" value="search" />
         <div id="img-input">
@@ -68,6 +74,7 @@
           태그
         </div>
       </form>
+      -->
     </div>
   </div>
 
